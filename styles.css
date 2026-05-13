@@ -1,0 +1,199 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+  max-width: 58rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000080;
+  background: #fff;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 0.75rem 0;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0 0 0.15rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #000080;
+}
+
+.site-header .addr {
+  margin: 0 0 0.15rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000080;
+}
+
+.site-header .subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000080;
+}
+
+.site-header a {
+  color: #800080;
+  text-decoration: underline;
+}
+
+.site-header a:visited {
+  color: #800080;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  padding: 0.25rem 0 0.5rem;
+}
+
+@media (max-width: 36rem) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.columns.single-column {
+  grid-template-columns: 1fr;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columns ul {
+  margin: 0;
+  padding-left: 1.35rem;
+}
+
+.columns li {
+  margin-bottom: 0.85rem;
+  color: #000080;
+}
+
+.columns a {
+  color: #800080;
+  text-decoration: underline;
+}
+
+.columns a:visited {
+  color: #800080;
+}
+
+.link-note {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.message {
+  padding: 0.15rem 0;
+}
+
+.message p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #000080;
+}
+
+.site-footer {
+  font-size: 0.85rem;
+  color: #000080;
+}
+
+.site-footer p {
+  margin: 0.35rem 0;
+}
+
+.site-footer .copyright {
+  margin-top: 0;
+}
+
+.site-footer a {
+  color: #800080;
+  text-decoration: underline;
+}
+
+.site-footer .legal {
+  margin-bottom: 0.5rem;
+}
+
+.site-footer .meta {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/* Letter page (message.html) — print-like document, black body text */
+
+body.letter-page {
+  color: #000;
+  max-width: 48rem;
+}
+
+.letter {
+  padding: 0.25rem 0 0.5rem;
+}
+
+.letter-title {
+  margin: 0 0 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #000080;
+}
+
+.letter p {
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.letter-signature {
+  margin-top: 1.5rem;
+  margin-left: 58%;
+}
+
+.letter-signature p {
+  margin: 0 0 0.35rem;
+}
+
+@media (max-width: 28rem) {
+  .letter-signature {
+    margin-left: 2rem;
+  }
+}
+
+body.letter-page a {
+  color: #00e;
+  text-decoration: underline;
+}
+
+body.letter-page a:visited {
+  color: #551a8b;
+}
+
+.letter-back {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+}
